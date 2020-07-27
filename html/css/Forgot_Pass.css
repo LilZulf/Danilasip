@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'Lato' ;
+    src: url(../../assets/fonts/Lato-Light.ttf);
+}
+
+body{
+    margin: 0 auto;
+    background-image: linear-gradient(45deg, #e06659, #f8afa4);
+    font-family: Lato Light;    
+}
+.bg-login{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box-login{
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+    position:relative;
+}
+
+.log{
+    width: 400px;
+    height: 500px;
+    position: absolute;
+    z-index: -1;
+}
+.sub-login{
+    width: 400px;
+    height: 500px;
+    border-radius: 5px;
+    position:relative;
+    overflow:hidden;
+    z-index: -1 ;
+}
+.sub-login:before{
+    content:'';
+    position:absolute;
+    top: -60px;
+    left: calc(50% - 60px);
+    width: 120px;
+    height: 120px;
+    border-radius:50%;
+    box-shadow: 0px 500px 0px 500px white;
+}
+.user-icon{
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-icon i{
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    top: -50px;
+}
+form{
+    padding: 50px;  
+    padding-top: 160px; 
+    transition: 1s;
+}
+.input-icon{
+    margin: 0 auto;
+    margin-top: 40px;
+    transition: 1s;
+}
+.input-icon i{
+    font-size: 24px;
+    color: #cbcbcb;
+    margin-left: 7.5px;
+    float: left;
+    transition: 1s;
+}
+.title-dec2 {
+    background-color: #cbcbcb;
+    height: 5px;
+    width: 40px;
+    transition: 1s;
+}
+
+.input {
+    margin-left: 17.5;    
+    border: none;
+    font-size: 24px;
+    width: calc(100% - 50px);
+    transition: 1s;
+}
+
+.input input::placeholder {
+    font-family: Lato;
+    color: #cbcbcb;
+}
+
+.input:focus {
+    outline: none;
+    color:#e06659;
+}
+
+.input:focus::placeholder {
+    color:#e06659;
+}
+
+.input:focus ~ .title-dec2{
+    background-color: #e06659;
+}
+
+.input:focus ~ .title-dec3 {
+    border-top: 2px solid #e06659;
+}
+
+.input:focus ~ i {
+    color: #e06659;
+}
+.input-icon h3{
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: #686868;
+}
+.title-dec3 {
+    display: inline-block;
+    margin: 0;
+    margin-top: -2px;
+    padding: 0;
+    width: 100%;
+    height: 2px;
+    border: 0;
+    border-top: 2px solid #cbcbcb;
+    transition: 1s;
+}
+
+.proc-login{
+    position: absolute;
+    bottom: 0;
+}
+.btn-login{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    bottom: 0;
+}
+.btn-login button{
+    width: 300px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #e06659;
+    margin-bottom: 50px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.26);
+    color: white;
+    font-family: Lato;
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+}
+button:focus{
+    outline: none;
+}
+
+form.active {
+    padding-top: 120px;
+}
+
+form.active .notif {
+    height: 110px;
+}
+
+.notif {
+    height: 0px;
+    width: calc(100% - 40px);
+    border-radius: 10px;
+    background-color: #ffe8b2;
+    padding: 0px 20px;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.fa-check-circle {
+    font-size: 50px;
+    color: #3ac435;
+}
+
+.notif-text {
+    width: calc(100% - 75px);
+    display: inline-block;
+    font-weight: bold;
+    font-size: 24px;
+    color: #3ac435;
+    margin-left: 20px;
+}
+
+.breadcrumb{
+    display: none;
+}
+ul.breadcrumb {
+    position: absolute;
+    padding: 10px 16px;
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: #01447e;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">\00a0";
+}
+ul.breadcrumb li a {    
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+    .box-login, .log, .sub-login{
+        width: 100%;
+        border-radius: 0;
+    }
+    .proc-login{
+        width: calc(100% - 100px);
+    }
+    .check{
+        width: 15px;
+        height: 15px;
+    }
+}
+
+@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+    
+}

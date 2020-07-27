@@ -1,0 +1,332 @@
+@font-face {
+    font-family: 'Lato';
+    src: url(../../assets/fonts/Lato-regular.ttf);
+}
+
+body{
+    margin: 0 auto;
+    background-image: linear-gradient(45deg, #e06659, #f8afa4);
+    font-family: Lato;
+}
+
+* {
+    -webkit-box-sizing: unset;
+    -moz-box-sizing: unset;
+    box-sizing: unset;
+}
+
+ul.wysihtml5-toolbar>li {
+    height: 40px;
+}
+
+.breadcrumb{
+    display: none;
+}
+ul.breadcrumb {
+    position: absolute;
+    padding: 10px 16px;
+    list-style: none;
+}
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: #01447e;
+}
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: ">\00a0";
+}
+ul.breadcrumb li a {    
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.21;
+    letter-spacing: normal;
+    text-align: left;
+    color: white;
+    text-decoration: none;
+}
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+.box2 {
+    margin: 40px auto;
+    width: 80%;
+    height: calc(100% - 80px);
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 3px 6px #0000002e;
+    overflow: hidden;
+}
+
+.box2 .header {
+    width: calc(100% - 160px);
+    padding: 5px 80px;
+    box-shadow: 0px 3px 6px #0000002e;
+    z-index: 10;
+}
+
+.box2 .header h1 {
+    float: left;
+    color: #9b9b9b;
+}
+
+.box2 .header i {
+    float: right;
+    font-size: 32px;
+    margin-top: 27.5px;
+    color: #cbcbcb;
+    margin-right: -40px;
+}
+
+.box2 .form {
+    width: calc(100% - 160px);
+    height: calc(100% - 250px);
+    margin: 0;
+    padding: 80px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.box2 .form .detail-input {
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.img {
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    position: relative;
+}
+
+.box2 .form .detail-input .img-input{
+    height: inherit;
+    width: inherit;
+    background: #cbcbcb;
+    position: fixed;
+    display: inline-block;
+}
+
+.box2 .form .detail-input .detail {
+    float: right;
+    width: calc(100% - 350px);
+    padding-left: 20px;
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.input h6 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #9b9b9b;
+}
+
+.input input {
+    width: calc(100% - 20px);
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: solid #cbcbcb 1px;
+}
+
+.input select {
+    width: calc(100% - 20px);
+    height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    border: solid #cbcbcb 1px;
+}
+
+.input .select2-selection {
+    width: 100%;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.input textarea {
+    width: calc(100% - 20px);
+    min-height: 200px;
+    padding: 0 10px;
+    resize: none;
+}
+
+input:read-only {
+    background-color: #cbcbcb8f;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.button {
+    height: 50px;
+    background: #e06659;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.delete-button {
+    height: 20px;
+    text-align: center;
+    padding-top: 19px;
+    padding-bottom: 19px;
+    background: #e06659;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape){
+    .img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .box2 .form .detail-input .detail {
+        width: calc(100% - 220px);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait){
+    .img {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .box2 .form .detail-input .img-input{
+        height: auto;
+        min-height: 200px;
+        width: 100%;
+        background: #cbcbcb;
+        position: relative;
+        display: inline-block;
+    }
+
+    .box2 .form .detail-input .detail {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 40px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    .box2 {
+        width: 100%;
+    }
+
+    .box2 .header {
+        width: calc(100% - 40px);
+        padding: 5px 20px;
+    }
+
+    .box2 .header h1 {
+        font-size: 28px;
+    }
+
+    .box2 .header i{
+        margin-right: 0;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .box2 .form .detail-input .img-input{
+        height: auto;
+        min-height: 200px;
+        width: 100%;
+        background: #cbcbcb;
+        position: relative;
+        display: inline-block;
+    }
+
+    .box2 .form .detail-input .detail {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 40px;
+    }
+
+    .box2 .form {
+        padding: 20px;
+        width: calc(100% - 40px);
+        height: calc(100% - 120px);
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .box2 {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .box2 .header {
+        width: calc(100% - 40px);
+        padding: 5px 20px;
+    }
+
+    .box2 .header h1 {
+        font-size: 28px;
+    }
+
+    .box2 .header i{
+        margin-right: 0;
+        margin-top: 25px;
+        font-size: 24px;
+    }
+    .img {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .box2 .form .detail-input .img-input{
+        height: auto;
+        min-height: 100px;
+        width: 100%;
+        background: #cbcbcb;
+        position: relative;
+        display: inline-block;
+    }
+
+    .box2 .form .detail-input .detail {
+        width: 100%;
+        padding-left: 0;
+        margin-top: 40px;
+    }
+
+    .box2 .form {
+        padding: 20px;
+        width: calc(100% - 40px);
+        height: calc(100% - 120px);
+    }
+}

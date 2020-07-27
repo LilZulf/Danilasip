@@ -1,0 +1,254 @@
+body {
+    font-family: poppins;
+    padding: 0;
+	margin: 0;
+}
+
+.wrapper {
+    width: 1068px;
+    margin: 0 auto;
+}
+
+.title {
+    font-family: oswald;
+    text-align: center;
+    color: #204055;
+    margin-bottom: 0;
+    font-size: 45;
+    font-weight: 400;
+    padding-top: 160px;
+}
+
+.title-underline {
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid #E06659;
+    width: 260px;
+}
+
+.text-img-group {
+    margin-top: 120px;
+    position: relative;
+}
+
+.text-align-left {
+    text-align: left;
+    width: calc(60% - 20px);
+    margin: 0;
+    margin-right: 20px;
+    font-size: 14px;
+    float: left;
+    color: #204055;
+    top: 50%;
+    position: absolute;
+    transform: translate(0, -50%);
+}
+
+.img {
+    background-color: #bfbfbf;
+    width: 40%;
+    border-radius: 5px;
+    height: 250px;
+    float: left;
+    object-fit: cover;
+}
+
+.text-align-right {
+    text-align: right;
+    width: calc(60% - 20px);
+    margin: 0;
+    margin-left: 20px;
+    font-size: 14px;
+    float: left;
+    color: #204055;
+    top: 50%;
+    position: absolute;
+    transform: translate(0, -50%);
+    right: 0;
+}
+
+.team {
+    width: calc(25% - 20px);
+    margin: 0 10px;
+    float: left;
+    margin-top: 60px;
+}
+
+.profile {
+    background-color: #bfbfbf;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+}
+
+.name {
+    font-family: poppins;
+    font-size: 28px;
+    color: #204055;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.name-underline {
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid #E06659;
+    width: 80%;
+}
+
+.position {
+    font-family: poppins;
+    font-size: 14px;
+    color: #204055;
+    text-align: center;
+    margin-top: 0;
+    font-weight: 300;
+}
+
+.desc {
+    font-family: poppins;
+    font-size: 14px;
+    color: #204055;
+    text-align: center;
+    height: 150px;
+}
+
+.sosmed {
+    margin-bottom: 60px;
+}
+
+.sosmed hr {
+    display: inline-block;
+    width: calc(50% - 60px);
+    margin: 0 auto;
+    border: 0;
+    border-top: 1px solid #E06659;
+    margin-bottom: 5px;
+}
+
+.sosmed i {
+    color: #204055;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait){
+    .wrapper{
+        width: calc(100% - 40px);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .wrapper{
+        width: calc(100% - 40px);
+    }
+}
+
+@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: portrait) {
+    .wrapper{
+        width: calc(100% - 40px);
+    }
+    .title {
+        padding-top: 140px;
+    }
+}
+
+@media only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 1) and (orientation: landscape) {
+    .wrapper{
+        width: calc(100% - 40px);
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+    .text-align-left {
+        text-align: justify;
+        width:  100%;
+        margin: 0;
+        font-size: 14px;
+        color: #204055;
+        position: relative;
+        top: unset;
+        transform: unset;
+    }
+    
+    .img {
+        width: 100%;
+        border-radius: 5px;
+        height: 250px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    
+    .text-align-right {
+        text-align: justify;
+        width:  100%;
+        margin: 0;
+        font-size: 14px;
+        color: #204055;
+        position: relative;
+        top: unset;
+        transform: unset;
+    }
+
+    .text-img-group {
+        margin-top: 80px;
+        position: relative;
+    }    
+
+    .team {
+        width: calc(50% - 20px);
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .text-align-left {
+        text-align: justify;
+        width:  100%;
+        margin: 0;
+        font-size: 14px;
+        color: #204055;
+        position: relative;
+        top: unset;
+        transform: unset;
+    }
+    
+    .img {
+        width: 100%;
+        border-radius: 5px;
+        height: 250px;
+        object-fit: cover;
+        margin-bottom: 20px;
+    }
+    
+    .text-align-right {
+        text-align: justify;
+        width:  100%;
+        margin: 0;
+        font-size: 14px;
+        color: #204055;
+        position: relative;
+        top: unset;
+        transform: unset;
+    }
+
+    .text-img-group {
+        margin-top: 80px;
+        position: relative;
+    }    
+
+    .team {
+        width: calc(100% - 20px);
+        margin-top: 60px;
+    }
+}
+
+@media only screen and (max-width: 767px) and (orientation: landscape) {
+    .team {
+        width: calc(50% - 20px);
+        margin-top: 60px;
+    }
+}

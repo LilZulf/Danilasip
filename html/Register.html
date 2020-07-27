@@ -1,0 +1,85 @@
+<html>
+    <head>
+        <link href="css/register.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+
+    <body>
+        <div>
+            <div class="bg-login">
+                <div class="box-login">
+                    <div class="log">
+                        <div class="sub-login"></div>
+                    </div>
+                    
+                    <form action=""> 
+                        <label class="user-icon">
+                            <img src="img/user.png" id="img-profile">
+                            <input type="file" id="img-input" accept="image/*" required>
+                        </label>
+                        <div class="input-icon">
+                            <input type="text" class="input" placeholder="name" required>
+                            <i class="far fa-user"></i>
+                            <div class="title-dec2"></div>
+                            <hr class="title-dec3">
+                        </div>
+                        <div class="input-icon">
+                            <input type="email" class="input" placeholder="email" required>
+                            <i class="far fa-envelope"></i>
+                            <div class="title-dec2"></div>
+                            <hr class="title-dec3">
+                        </div>
+                        <div class="input-icon">
+                            <input type="password" id="passInput" class="input pass" placeholder="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
+                            <i id="icon" class="fas fa-key"></i>
+                            <label id="show-pass-cont">
+                                <input type="checkbox" onclick="showPass()">
+                                <span id="show-pass-span" class="fas"></span>
+                            </label>
+                            <div class="title-dec2"></div>
+                            <hr class="title-dec3">
+                            <h3>* Example : 123Password</h3>
+                        </div>
+                        <div class="proc-register">
+                            <div class="btn-register">
+                                <input type="submit" value="Register">
+                            </div>
+                            <div class="txt-register">
+                                <h3>Have account?<a> Sign In</a></h3>
+                            </div>
+                        </div>
+                    </form>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <script>
+                            function changeProfile(input) {
+                                if (input.files && input.files[0]) {
+                                    var reader = new FileReader();
+                                    
+                                    reader.onload = function (e) {
+                                        $('#img-profile').attr('src', e.target.result);
+                                    }
+                                    
+                                    reader.readAsDataURL(input.files[0]);
+                                }
+                            }
+                            
+                            $("#img-input").change(function(){
+                                changeProfile(this);
+                            });
+                        </script>
+                </div>
+            </div>
+        </div>
+        <script>
+            function showPass() {
+            var x = document.getElementById("passInput");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+            }
+        </script>
+    </body>
+</html>

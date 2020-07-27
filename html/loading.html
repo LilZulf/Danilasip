@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link href="css/header.css" rel="stylesheet" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+
+    <style>
+        @keyframes loading {
+            0% {
+                height: 20px;
+            }
+            50% {
+                height: 60px;
+            }
+
+            100% {
+                height: 20px;
+            }
+        }
+
+        .mainn .circle {
+            background: #e06659;
+            border-radius: 50px;
+            position: relative;
+            width: 10px;
+            display: inline-block;
+            animation: loading 2.0s infinite;
+            margin: 0 2px;
+        }
+
+        .mainn {
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .mainn .circle:nth-child(1) { animation-delay: .0s }
+        .mainn .circle:nth-child(2) { animation-delay: .2s }
+        .mainn .circle:nth-child(3) { animation-delay: .4s }
+        .mainn .circle:nth-child(4) { animation-delay: .6s }
+        .mainn .circle:nth-child(5) { animation-delay: .8s }
+        .mainn .circle:nth-child(6) { animation-delay: 1.0s }
+    </style>
+
+    <body>
+        <div class="mainn">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+    </body>
+</html>

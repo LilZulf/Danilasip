@@ -1,0 +1,743 @@
+<html>
+    <head>
+        <link href="css/header.css" rel="stylesheet" />
+        <link href="css/Percobaan 1.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/swiper.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    </head>
+	
+    <body>
+        <div>
+            <!--Header-->
+            <div class="header">
+                <div class="wrapper">
+                    <div id="logo">
+                        <a href=""><span>Meja</span>Kita</a>
+                    </div>
+                    <div class="icon">
+                        <div class="hamburger"></div>
+                    </div>
+                    <div class="user">
+                        <img src="img/user.png" id="myBtn">
+                    </div>
+                    <div class="search-box">
+                        <input type="search" placeholder="Search" class="input">
+                        <div class="btn">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <nav>
+                        <div id="header-menu">
+                            <ul>
+                                <li><a href="#">Home<div class="active"></div></a></li>
+                                <li><a href="#">Article<div></div></a></li>
+                                <li  id="dropdown-category"><a href="#">Category <i class="fas fa-caret-down"></i><div></div></a>
+                                    <ul class="drop">
+                                        <li><a href="#">Item 1</a></li>
+                                        <li><a href="#">Item 2</a></li>
+                                        <li><a href="#">Item 3</a></li>
+                                        <li><a href="#">Item 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">MejaKita TV<div></div></a></li>
+                                <li><a href="#">About<div></div></a></li>
+                            </ul>
+                        </div>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+            <!--End of Header-->
+        </div>
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="img/user.png">
+                <div class="username">
+                    <p>Username</p>
+                </div>
+                <p>Email</p>
+                <p>Status</p>
+                <button class="modal-btn">Edit</button><button class="modal-btn">Logout</button class="modal-btn"><button class="modal-btn2">Ajukan Diri</button>
+            </div>
+        </div>
+
+        <div>
+            <!--Mozaic-->
+            <div class="wrapper2">
+                <section class="mozaic-area" id="mozaic">
+                    <div class="box1">
+                        <div class="grad-overlay"></div>
+                        <img src="img/images.png">
+                        <div class="name first-moz">
+                            <span>1 January 2019 | Lorep</i></span>
+                            <h3>3 Cara belajar lebih efisien</h3>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="sub-box">
+                            <div class="grad-overlay"></div>
+                            <img src="img/images.png">
+                            <div class="name second-moz">
+                                <span>1 January 2019 | Lorep</i></span>
+                                <h3>Dampak Buruk Junk Food untuk Kesehatan Tubuh</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box2">
+                        <div class="one">
+                            <div class="grad-overlay"></div>
+                            <img src="img/images.png">
+                            <div class="name second-moz">
+                                <span>1 January 2019 | Lorep</i></span>
+                                <h3>Kebakaran Hutan yang Terjadi di Indonesia</h3>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <!--End of Mozaic-->
+        </div>
+        
+        <div style="width: 100%; overflow: hidden">
+            <!--Recomended Article-->
+            <div class="wrapper">
+                <section class="recomended-area" id="recomended">
+                    <div class="recom-title rec">
+                        <div class="title-dec">
+                            <p>CATEGORY</p>
+                            <div class="title-dec2"></div>
+                        </div>
+                        <hr class="title-dec3">
+                    </div>
+                    
+                    <div class="latest-card after-mozaic">
+                        <div class="card-latest">
+                            <div vocab="http://schema.org/" typeof="Article">
+                                <div class="latest-box">
+                                    <div class="card-image-box">
+                                        <a data-fancybox="gallery" href="img/images.png" data-caption="3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari" property="image"><h1 style="display:none";>https://example.com/photos/1x1/photo.jpg</h1>
+                                            <img src="img/images.png" class="img-fan">
+                                        </a>
+                                    </div>
+                                    <div class="box-txt">
+                                        <h1 property="headline">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</h1>
+                                        <i class="far fa-clock clock-icon"></i><h6 property="datePublished"> 01 January 2019 | <div class="authh" property="author">Lorep</div></h6>
+                                        <h6 property="dateModified" style="display:none";><i class="far fa-clock"></i> 01 January 2019 | <div property="author">Lorep</div></h6>
+                                        <div property="publisher" typeof="organization" style="display:none";>
+                                            <div property="name">James Smith</div>
+                                            <div property="logo" typeof="ImageObject">
+                                                <div property="url">http://schema.org/Article</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web</h1></div>
+                        </div>
+                        <div class="card-latest">
+                            <div vocab="http://schema.org/" typeof="Article">
+                                <div class="latest-box">
+                                    <div class="card-image-box">
+                                        <a data-fancybox="gallery" href="img/images.png" data-caption="3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari" property="image"><h1 style="display:none";>https://example.com/photos/1x1/photo.jpg</h1>
+                                            <img src="img/images.png" class="img-fan">
+                                        </a>
+                                    </div>
+                                    <div class="box-txt">
+                                        <h1 property="headline">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</h1>
+                                        <i id="clock-icon" class="far fa-clock"></i><h6 property="datePublished"> 01 January 2019 | <div class="authh" property="author">Lorep</div></h6>
+                                        <h6 property="dateModified" style="display:none";><i class="far fa-clock"></i> 01 January 2019 | <div property="author">Lorep</div></h6>
+                                        <div property="publisher" typeof="organization" style="display:none";>
+                                            <div property="name">James Smith</div>
+                                            <div property="logo" typeof="ImageObject">
+                                                <div property="url">http://schema.org/Article</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web</h1></div>
+                        </div>
+                        <div class="card-latest">
+                            <div vocab="http://schema.org/" typeof="Article">
+                                <div class="latest-box">
+                                    <div class="card-image-box">
+                                        <a data-fancybox="gallery" href="img/images.png" data-caption="3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari" property="image"><h1 style="display:none";>https://example.com/photos/1x1/photo.jpg</h1>
+                                            <img src="img/images.png" class="img-fan">
+                                        </a>
+                                    </div>
+                                    <div class="box-txt">
+                                        <h1 property="headline">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</h1>
+                                        <i id="clock-icon" class="far fa-clock"></i><h6 property="datePublished"> 01 January 2019 | <div class="authh" property="author">Lorep</div></h6>
+                                        <h6 property="dateModified" style="display:none";><i class="far fa-clock"></i> 01 January 2019 | <div property="author">Lorep</div></h6>
+                                        <div property="publisher" typeof="organization" style="display:none";>
+                                            <div property="name">James Smith</div>
+                                            <div property="logo" typeof="ImageObject">
+                                                <div property="url">http://schema.org/Article</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web</h1></div>
+                        </div>
+                    </div>
+                </section>
+            </div> 
+            <!--End of Recomended Article-->
+        </div>
+
+        <div style="width: 100%; overflow: hidden">
+            <!--Recomended Article-->
+            <div class="wrapper">
+                <section class="recomended-area" id="recomended">
+                    <div class="recom-title rec">
+                        <div class="title-dec">
+                            <p>CATEGORY</p>
+                            <div class="title-dec2"></div>
+                        </div>
+                        <hr class="title-dec3">
+                    </div>
+                    
+                    <div class="latest-card after-mozaic">
+                        <div class="card-latest">
+                            <div vocab="http://schema.org/" typeof="Article">
+                                <div class="latest-box">
+                                    <div class="card-image-box">
+                                        <a data-fancybox="gallery" href="img/images.png" data-caption="3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari" property="image"><h1 style="display:none";>https://example.com/photos/1x1/photo.jpg</h1>
+                                            <img src="img/images.png" class="img-fan">
+                                        </a>
+                                    </div>
+                                    <div class="box-txt">
+                                        <h1 property="headline">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</h1>
+                                        <i class="far fa-clock clock-icon"></i><h6 property="datePublished"> 01 January 2019 | <div class="authh" property="author">Lorep</div></h6>
+                                        <h6 property="dateModified" style="display:none";><i class="far fa-clock"></i> 01 January 2019 | <div property="author">Lorep</div></h6>
+                                        <div property="publisher" typeof="organization" style="display:none";>
+                                            <div property="name">James Smith</div>
+                                            <div property="logo" typeof="ImageObject">
+                                                <div property="url">http://schema.org/Article</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web</h1></div>
+                        </div>
+                        <div class="card-latest">
+                            <div vocab="http://schema.org/" typeof="Article">
+                                <div class="latest-box">
+                                    <div class="card-image-box">
+                                        <a data-fancybox="gallery" href="img/images.png" data-caption="3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari" property="image"><h1 style="display:none";>https://example.com/photos/1x1/photo.jpg</h1>
+                                            <img src="img/images.png" class="img-fan">
+                                        </a>
+                                    </div>
+                                    <div class="box-txt">
+                                        <h1 property="headline">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</h1>
+                                        <i id="clock-icon" class="far fa-clock"></i><h6 property="datePublished"> 01 January 2019 | <div class="authh" property="author">Lorep</div></h6>
+                                        <h6 property="dateModified" style="display:none";><i class="far fa-clock"></i> 01 January 2019 | <div property="author">Lorep</div></h6>
+                                        <div property="publisher" typeof="organization" style="display:none";>
+                                            <div property="name">James Smith</div>
+                                            <div property="logo" typeof="ImageObject">
+                                                <div property="url">http://schema.org/Article</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web</h1></div>
+                        </div>
+                        <div class="card-latest">
+                            <div vocab="http://schema.org/" typeof="Article">
+                                <div class="latest-box">
+                                    <div class="card-image-box">
+                                        <a data-fancybox="gallery" href="img/images.png" data-caption="3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari" property="image"><h1 style="display:none";>https://example.com/photos/1x1/photo.jpg</h1>
+                                            <img src="img/images.png" class="img-fan">
+                                        </a>
+                                    </div>
+                                    <div class="box-txt">
+                                        <h1 property="headline">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</h1>
+                                        <i id="clock-icon" class="far fa-clock"></i><h6 property="datePublished"> 01 January 2019 | <div class="authh" property="author">Lorep</div></h6>
+                                        <h6 property="dateModified" style="display:none";><i class="far fa-clock"></i> 01 January 2019 | <div property="author">Lorep</div></h6>
+                                        <div property="publisher" typeof="organization" style="display:none";>
+                                            <div property="name">James Smith</div>
+                                            <div property="logo" typeof="ImageObject">
+                                                <div property="url">http://schema.org/Article</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web</h1></div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            </div> 
+            <!--End of Recomended Article-->
+        </div>
+
+        <!--Selected Content-->
+        <div class="selected-content">
+            <div class="orianted-bg">
+                <div class="content">
+                    <div class="card col8">
+                        <div class="ikon">
+                            <a data-fancybox="gallery" href="video/video1.mp4" data-caption="My First Video">
+                                <div class="grad-overlay-video"></div>
+                                <i class="fas fa-play-circle"></i>
+                                <div class="select-txt">
+                                    <h1>Belajar Bersama Tutor Terbaik</h1>
+                                </div>
+                                <img class="cardm" src="img/images.png">
+                            </a>
+                        </div>
+                    </div>
+                    <!--Popular Article-->
+                    <div class="card-popular col4">
+                        <div class="card-box">
+                            <div>
+                                <div class="list_img">
+                                    <img src="img/images.png">
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div class="list-info">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                                <div class="list-date"><i class="far fa-clock"></i> 01 January 2019</div>
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div>
+                                <div class="list_img">
+                                    <img src="img/images.png">
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div class="list-info">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                                <div class="list-date"><i class="far fa-clock"></i> 01 January 2019</div>
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div>
+                                <div class="list_img">
+                                    <img src="img/images.png">
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div class="list-info">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                                <div class="list-date"><i class="far fa-clock"></i> 01 January 2019</div>
+                            </div>
+                        </div>
+                        <div class="card-box">
+                            <div>
+                                <div class="list_img">
+                                    <img src="img/images.png">
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div class="list-info">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                                <div class="list-date"><i class="far fa-clock"></i> 01 January 2019</div>
+                            </div>
+                        </div>
+                        <div style="clear: both"></div>
+                        <button><h3>TAMPILKAN SEMUA</h3></button>
+                    </div>
+                    <div style="clear: both"></div>
+                    <!--End of Popular Article-->
+                </div>
+            </div>
+        </div>
+        <!--End of Selected Content-->
+
+        <div style="width: 100%; overflow: hidden">
+            <!--Recomended Article-->
+            <div class="wrapper">
+                <section class="recomended-area" id="recomended">
+                    <div class="recom-title rec">
+                        <div class="title-dec">
+                            <p>CATEGORY</p>
+                            <div class="title-dec2"></div>
+                        </div>
+                        <hr class="title-dec3">
+                    </div>
+                    
+                    <div class="latest-card after-mozaic">
+                        <div class="card-latest">
+                            <div vocab="http://schema.org/" typeof="Article">
+                                <div class="latest-box">
+                                    <div class="card-image-box">
+                                        <a data-fancybox="gallery" href="img/images.png" data-caption="3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari" property="image"><h1 style="display:none";>https://example.com/photos/1x1/photo.jpg</h1>
+                                            <img src="img/images.png" class="img-fan">
+                                        </a>
+                                    </div>
+                                    <div class="box-txt">
+                                        <h1 property="headline">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</h1>
+                                        <i class="far fa-clock clock-icon"></i><h6 property="datePublished"> 01 January 2019 | <div class="authh" property="author">Lorep</div></h6>
+                                        <h6 property="dateModified" style="display:none";><i class="far fa-clock"></i> 01 January 2019 | <div property="author">Lorep</div></h6>
+                                        <div property="publisher" typeof="organization" style="display:none";>
+                                            <div property="name">James Smith</div>
+                                            <div property="logo" typeof="ImageObject">
+                                                <div property="url">http://schema.org/Article</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web</h1></div>
+                        </div>
+                        <div class="card-latest">
+                            <div vocab="http://schema.org/" typeof="Article">
+                                <div class="latest-box">
+                                    <div class="card-image-box">
+                                        <a data-fancybox="gallery" href="img/images.png" data-caption="3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari" property="image"><h1 style="display:none";>https://example.com/photos/1x1/photo.jpg</h1>
+                                            <img src="img/images.png" class="img-fan">
+                                        </a>
+                                    </div>
+                                    <div class="box-txt">
+                                        <h1 property="headline">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</h1>
+                                        <i id="clock-icon" class="far fa-clock"></i><h6 property="datePublished"> 01 January 2019 | <div class="authh" property="author">Lorep</div></h6>
+                                        <h6 property="dateModified" style="display:none";><i class="far fa-clock"></i> 01 January 2019 | <div property="author">Lorep</div></h6>
+                                        <div property="publisher" typeof="organization" style="display:none";>
+                                            <div property="name">James Smith</div>
+                                            <div property="logo" typeof="ImageObject">
+                                                <div property="url">http://schema.org/Article</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web</h1></div>
+                        </div>
+                        <div class="card-latest">
+                            <div vocab="http://schema.org/" typeof="Article">
+                                <div class="latest-box">
+                                    <div class="card-image-box">
+                                        <a data-fancybox="gallery" href="img/images.png" data-caption="3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari" property="image"><h1 style="display:none";>https://example.com/photos/1x1/photo.jpg</h1>
+                                            <img src="img/images.png" class="img-fan">
+                                        </a>
+                                    </div>
+                                    <div class="box-txt">
+                                        <h1 property="headline">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</h1>
+                                        <i id="clock-icon" class="far fa-clock"></i><h6 property="datePublished"> 01 January 2019 | <div class="authh" property="author">Lorep</div></h6>
+                                        <h6 property="dateModified" style="display:none";><i class="far fa-clock"></i> 01 January 2019 | <div property="author">Lorep</div></h6>
+                                        <div property="publisher" typeof="organization" style="display:none";>
+                                            <div property="name">James Smith</div>
+                                            <div property="logo" typeof="ImageObject">
+                                                <div property="url">http://schema.org/Article</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web</h1></div>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+            </div> 
+            <!--End of Recomended Article-->
+        </div>
+
+        <div>
+            <!--Session MejaKita-->
+            <div class="click-to-call">
+                <div class="grad-overlay-video"></div>
+                <div class="click-txt">
+                    <div class="click-lft">
+                        <div>
+                            <h4>Bagikan Catatanmu ke Seluruh Siswa</h4>
+                            <h2>Bergabunglah dengan Mejakita</h2>
+                        </div>
+                    </div>
+                    <div class="click-rgt">
+                        <a href="#">JOIN NOW</a>
+                    </div>
+                </div>
+            </div>
+            <!--End of Session MejaKita-->
+        </div>
+
+        <!--Footer-->
+        <div class="box-footer">
+            <div class="big-footer">
+                <div class="recom-title-footer">
+                    <div class="title-dec-footer">
+                        <p>CATEGORY</p>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recom-title-footer">
+                    <div class="title-dec-footer">
+                        <p>CATEGORY</p>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recom-title-footer">
+                    <div class="title-dec-footer">
+                        <p>CATEGORY</p>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="sub-footer">
+                    <img src="img/meja kita.png">
+                    <h4>Copyright@2019</h4>
+                    <div class="box-social">
+                        <div class="social-media facebook">
+                            <a href=""><i class="fab fa-facebook" style="color: #fff"></i></a>
+                        </div>
+                        <div class="social-media instagram">
+                            <a href=""><i class="fab fa-instagram" style="color: #fff"></i></a>
+                        </div>
+                        <div class="social-media twitter">
+                            <a href=""><i class="fab fa-twitter" style="color: #fff"></i></a>
+                        </div>
+                        <div class="social-media youtube">
+                            <a href=""><i class="fab fa-youtube" style="color: #fff"></i></a>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Footer-->
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script defer src="js/jquery.flexslider.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/jquery.flexslider.min.js"></script>
+        <script type="text/javascript">
+            $(window).load(function() {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                animationLoop: false,
+                itemWidth: 210,
+                itemMargin: 5
+            });
+            });
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#dropdown-category').click(function(){
+                    $('.drop').toggleClass('active')
+                })
+            })
+        </script>
+        <script type="text/javascript">
+            var zero = 0;
+            $(document).ready(function () {
+                $(window).on('scroll', function(){
+                    $('.header').toggleClass('hide', $(window).scrollTop()
+                        > zero);
+                    zero = $(window).scrollTop();
+                })
+            })
+        </script>
+        <script>
+            $('[data-fancybox="gallery"]').fancybox({
+                loop: true,
+                buttons: [
+                //"zoom",
+                "share",
+                //"slideShow",
+                //"fullScreen",
+                //"download",
+                "thumbs",
+                "close"
+                ],
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.icon').click(function(){
+                    $('.icon').toggleClass('active');
+                })
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".icon").click(function(){
+                    $("nav").slideToggle(500);
+                    $(".header").toggleClass("active").focus().val("");
+                })
+            })
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".btn").click(function(){
+                    $(".search-box").toggleClass("active").focus().val("");
+                    $(this).toggleClass("animate");
+                });
+            });
+        </script>
+        <script>
+            var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            if (w < 1024) {
+                $(".swipe").toggleClass("swiper-container").focus().val("");
+            }
+            window.addEventListener('resize', function(event){
+                location.reload();
+            });
+        </script>
+        <script>
+            var swiper = new Swiper('.swiper-container', {
+                slidesPerView: 1,
+                loop: true,
+                spaceBetween: 40,
+                centeredSlides: false,
+                pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+                },
+            });
+        </script>
+        <script>
+        var p=$('#fos p');
+        var divh=$('#fos').height();
+        while ($(p).outerHeight()>divh) {
+            $(p).text(function (index, text) {
+                return text.replace(/\W*\s(\S)*$/, '...');
+            });
+        }
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "flex";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+        </script>
+        <!--End of JQuery-->
+
+    </body>
+	
+</html>

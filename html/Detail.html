@@ -1,0 +1,792 @@
+<html>
+    <head>
+        <link href="css/header.css" rel="stylesheet" />
+        <link href="css/detail.css" rel="stylesheet" />
+        <link rel="stylesheet" href="css/swiper-article.css">
+        <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:200,300,400,500,600" rel="stylesheet">
+        <link rel="stylesheet" href="css/flexslider.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    </head>
+
+    <body>
+        <div id="main-content"> 
+            <div class="header">
+                <div class="wrapper">
+                    <div id="logo">
+                        <a href=""><span>Meja</span>Kita</a>
+                    </div>
+                    <div class="icon">
+                        <div class="hamburger"></div>
+                    </div>
+                    <div class="user">
+                        <img src="img/user.png" id="myBtn">
+                    </div>
+                    <div class="search-box">
+                        <input type="search" placeholder="Search" class="input">
+                        <div class="btn">
+                            <i class="fa fa-search" aria-hidden="true"></i>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                    <nav>
+                        <div id="header-menu">
+                            <ul>
+                                <li><a href="#">Home<div class="active"></div></a></li>
+                                <li><a href="#">Article<div></div></a></li>
+                                <li><a href="#">Category <i class="fas fa-caret-down"></i><div></div></a>
+                                    <ul class="drop">
+                                        <li><a href="#">Item 1</a></li>
+                                        <li><a href="#">Item 2</a></li>
+                                        <li><a href="#">Item 3</a></li>
+                                        <li><a href="#">Item 4</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">MejaKita TV<div></div></a></li>
+                                <li><a href="#">About<div></div></a></li>
+                            </ul>
+                        </div>
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+        <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <img src="img/user.png">
+                <div class="username">
+                    <p>Username</p>
+                </div>
+                <p>Email</p>
+                <p>Status</p>
+                <button class="modal-btn">Edit</button><button class="modal-btn">Logout</button class="modal-btn"><button class="modal-btn2">Ajukan Diri</button>
+            </div>
+        </div>
+
+        <!--Article-->
+        <div class="wrapper">
+            <div class="article-card col8" vocab="http://schema.org/" typeof="Article">
+               <div class="cat-all">      
+                    <div class="category-article">
+                        <div class="tag-new">
+                            <i class="fas fa-clock"></i>
+                            <h3>NEW</h3>
+                        </div>
+                    </div>
+                    <div class="category-article">
+                        <div class="tag-new">
+                            <i class="fas fa-thumbs-up"></i>
+                            <h3>RECOMMENDED</h3>
+                        </div>
+                    </div>
+                    <div class="category-article">
+                        <div class="tag-new">
+                            <i class="fas fa-star"></i>
+                            <h3>POPULAR</h3>
+                        </div>
+                    </div>
+                    <div class="ctgr">
+                        <div class="tag-ctgr">
+                            <h3>CATEGORY</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article-title">
+                    <h1>Education is the transmission of civilization</h1>
+                </div>
+
+                <div class="info">
+                    <div class="box-info">
+                        <div class="active2"></div>
+                        <span>by</span><h4>Lorep Ipsum</h4>
+
+                        <div class="date">
+                            <div class="ellipse"></div>
+                            <h4>01 JANUARY 2019</h4>
+                        </div>
+                    </div>
+
+                    <div class="viewers">
+                        <i class="far fa-eye"></i>
+                        <h4>572</h4>
+                    </div>
+
+                    <div class="comment-count">
+                        <i class="fas fa-comment"></i>
+                        <h4>82</h4>
+                    </div>
+
+                    <div class="viewers">
+                        <i class="fas fa-heart"></i>
+                        <h4>82</h4>
+                    </div>         
+                </div>
+
+                <div class="the-article">
+                    <div class="heading1">
+                        <h1>HEADING 1</h1>
+                        <p>Junk Food juga dikenal sebagai jenis makanan instan atau cepat saji. Makanan jenis ini memang sudah berkembang dengan pesat dan semakin banyak diminati hingga terjadi persaingan yang ketat oleh perusahaan makanan di wilayah Indonesia. Menurut sebagian orang, jenis makanan cepat saji ini memang lebih efektif dari sisi waktunya.<br><br>
+                            Selain itu, Junk Food   juga sangat mudah ditemukan. Bahkan, jenis makanan ini kerap memiliki cita rasa yang lezat. Dan harganya pun juga sangat terjangkau dan bersahabat.
+                            Di Negara kita ini, sudah cukup lama jenis makanan cepat saji ini mengundang berbagai perdebatan. Hal itu lantaran adanya indikasi dampak buruk yang dimiliki oleh makanan ini.
+                        </p>
+                        <div class="link-article">
+                            <a href="#" class="link1">https://www.link1.com</a>
+                            <a href="#" class="link2">https://www.link2.com</a>
+                        </div>
+                    </div>
+
+                    <div class="heading2">
+                        <h2>HEADING 2</h2>
+                        <p>Dampak buruk yang ditimbulkan oleh makanan jenis junk food dipicu oleh adanya kandungan zat berbahaya dalam makanan instan ini, misalnya lilin yang terdapat pada mie instan dan lain sebagainya. Tidak hanya itu, makanan cepat saji seringkali memiliki kandungan bahan pengawet serta berbagai jenis penyedap seperti micin. </p>
+                        <div class="article-img">
+                            <img src="img/images.png">
+                        </div>
+                    </div>
+
+                    <div class="heading3">
+                        <h3>HEADING 3</h3>
+                        <P> Adanya kata micin, akhir-akhir ini seringkali dipakai oleh anak-anak remaja bahkan dewasa jika mengalami kejadian yang dianggap kurang normal. Adapun yang dimaksud dengan kurang normal di sini adalah telat berfikirnya seseorang, atau tak kunjung menjawab apabila diajak untuk berbicara dan lainnya. Harus diakui bahwa makanan cepat saji atau Junk Food termasuk jenis makanan berbahaya jika dikonsumsi oleh tubuh sebagaimana yang di ungkap di atas tadi.<br><br>
+                            Terdapat beberapa jenis penelitian yang menyatakan bahwa terlalu sering mengkonsumsi jenis makanan cepat saji tidak menimbulkan dampak yang langsung di dalam tubuh manusia. Akan tetapi makanan cepat saji yang dimakan nantinya akan tertimbun dalam tubuh manusia dan bisa menyebabkan munculnya penyakit tertentu di kemudian hari. Misalnya penyakit kanker yang merupakan jenis penyakit berbahaya yang banyak menyerang manusia.<br><br>
+                            Tidak hanya itu, beberapa penyakit mematikan yang lain seperti stroke, batu ginjal dan usus buntu juga menjadi dampak tersendiri bagi orang yang berlebihan dalam mengkonsumsi jenis makanan cepat saji. Oleh karena itu, Anda yang kebetulan termasuk orang yang gemar mengkonsumsi makanan cepat saji, sebaiknya mulailah untuk menguranginya sejak saat ini.<br><br>
+                            Sebagai manusia yang membutuhkan kesehatan maksimal, sebaiknya mulailah untuk menyayangi diri sendiri dengan mengkonsumsi jenis makanan sehat. Penting untuk dijadikan pengetahuan bahwa berbagai jenis makanan instan dan cepat saji memiliki berbagai kandungan zat yang berbahaya, salah satunya adalah lilin yang sangat sulit untuk dicerna oleh tubuh.
+                        </P>
+                    </div>
+                </div>
+
+                <div class="tag-article">
+                    <a href="#">
+                        <div class="box-tag">
+                            <h3>Tag</h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-tag">
+                            <h3>Tag</h3>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="box-tag">
+                            <h3>Tag</h3>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="author">
+                    <div class="img-author">
+                        <img src="img/profil.jpg">
+                    </div>
+
+                    <div class="name-author">
+                        <span>by</span><h3>Lorep Name</h3>
+                        <div class="author-detail">
+                            <h3>Author</h3>
+                        </div>
+                    </div>
+
+                    <a href="#">
+                        <i class="fas fa-heart"></i>
+                    </a>
+                </div>
+
+                <div class="article-category">
+                    <div class="img-category">
+                        <a href="#">
+                            <img src="img/images.png">
+                            <h3>3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</h3>
+                        </a>
+                    </div>
+
+                    <div class="img-category">
+                        <a href="#">
+                            <img src="img/images.png">
+                            <h3>3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</h3>
+                        </a>
+                    </div>
+
+                    <div class="img-category">
+                        <a href="#">
+                            <img src="img/images.png">
+                            <h3>3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</h3>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="comment-category">
+                    <h3>Leave a reply</h3>
+
+                    <div class="box-comment">
+
+                        <div class="img-author">
+                            <img src="img/profil.jpg">
+                        </div>
+
+                        <div class="text-box">
+                            <textarea class="box-area" placeholder="Your comment here"></textarea>
+                        </div>
+                    
+                    </div>
+
+                    <div class="box-comment-reply">
+
+                        <div class="box-like">
+                            <i class="fas fa-heart"></i>
+                        </div>
+
+                        <div class="img-author-coment">
+                            <img src="img/profil.jpg">
+                            <div class="name-hour">
+                                <h3>Lorep Name</h3>
+                            </div>
+                            <h2>This is a Lorep Ipsum Commentar All About Lorep & Ipsum</h2>
+
+                            <div class="box-reply-item">
+                                <h4>2 hours ago</h4>
+                                <h4>99 likes</h4>
+                                <a id="dropdown-category" href="#">Reply</a>
+                            </div>
+
+                            <div class="text-box-reply">
+                                <textarea class="box-area-reply" placeholder="Your comment here"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="box-comment-subreply">
+
+                            <div class="box-like-reply">
+                                <i class="far fa-heart"></i>
+                            </div>
+
+                            <div class="img-author-coment reply">
+                                <img src="img/profil.jpg">
+                                <div class="name-hour">
+                                    <h3>Lorep Name</h3>
+                                </div>
+                                <h2>This is a Lorep Ipsum Commentar All About Lorep & Ipsum</h2>
+                                <div class="box-reply-item">
+                                    <h4>2 hours ago</h4>
+                                    <h4>99 likes</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="box-comment-subreply">
+
+                            <div class="box-like-reply">
+                                <i class="far fa-heart"></i>
+                            </div>
+
+                            <div class="img-author-coment reply">
+                                <img src="img/profil.jpg">
+                                <div class="name-hour">
+                                    <h3>Lorep Name</h3>
+                                </div>
+                                <h2>This is a Lorep Ipsum Commentar All About Lorep & Ipsum</h2>
+                                <div class="box-reply-item">
+                                    <h4>2 hours ago</h4>
+                                    <h4>99 likes</h4>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="box-comment-reply" style="margin-bottom: 20px;">
+
+                        <div class="box-like">
+                            <i class="fas fa-heart"></i>
+                        </div>
+
+                        <div class="img-author-coment">
+                            <img src="img/profil.jpg">
+                            <div class="name-hour">
+                                <h3>Lorep Name</h3>
+                            </div>
+                            <h2>This is a Lorep Ipsum Commentar All About Lorep & Ipsum</h2>
+                            <div class="box-reply-item">
+                                <h4>2 hours ago</h4>
+                                <h4>99 likes</h4>
+                                <a id="dropdown-category" href="#">Reply</a>
+                            </div>
+
+                            <div class="text-box-reply">
+                                <textarea class="box-area-reply" placeholder="Your comment here"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div style="clear:both"></div>
+                </div>
+            </div>
+        
+            <!--Widget-->
+            <div class="widget col4" >
+                <!--Popular Article-->
+                <div class="all-box2">
+                    <div class="title-desc">
+                        <p>POPULAR ARTICLE</p>
+                        <div class="title-desc2"></div>
+                    </div>
+                    <hr class="title-desc3">
+
+                    <div class="card-box ">
+                        <div vocab="http://schema.org/" typeof="Article">
+                            <div>
+                                <div property="image" class="list_img">
+                                    <img src="img/images.png">
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div property="headline" class="list-info"><a>3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</a></div>
+                                <div property="datePublished" class="list-date"><i class="far fa-clock"></i> 01 January 2019 | Category</div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web/article/nameArticle</h1></div>
+                        </div>
+                    </div>
+
+                    <div class="card-box">
+                        <div vocab="http://schema.org/" typeof="Article">
+                            <div>
+                                <div property="image" class="list_img">
+                                    <img src="img/images.png">
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div property="headline" class="list-info"><a>3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</a></div>
+                                <div property="datePublished" class="list-date"><i class="far fa-clock"></i> 01 January 2019 | Category</div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web/article/nameArticle</h1></div>
+                        </div>
+                    </div>
+
+                    <div class="card-box">
+                        <div vocab="http://schema.org/" typeof="Article">
+                            <div>
+                                <div property="image" class="list_img">
+                                    <img src="img/images.png">
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div property="headline" class="list-info"><a>3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</a></div>
+                                <div property="datePublished" class="list-date"><i class="far fa-clock"></i> 01 January 2019 | Category</div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web/article/nameArticle</h1></div>
+                        </div>
+                    </div>
+
+                    <div class="card-box">
+                        <div vocab="http://schema.org/" typeof="Article">
+                            <div>
+                                <div property="image" class="list_img">
+                                    <img src="img/images.png">
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div property="headline" class="list-info"><a>3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</a></div>
+                                <div property="datePublished" class="list-date"><i class="far fa-clock"></i> 01 January 2019 | Category</div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web/article/nameArticle</h1></div>
+                        </div>
+                    </div>
+
+                    <div class="card-box">
+                        <div vocab="http://schema.org/" typeof="Article">
+                            <div>
+                                <div property="image" class="list_img">
+                                    <img src="img/images.png">
+                                </div>
+                            </div>
+                            <div class="list-body">
+                                <div property="headline" class="list-info"><a>3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</a></div>
+                                <div property="datePublished" class="list-date"><i class="far fa-clock"></i> 01 January 2019 | Category</div>
+                            </div>
+                            <div property="mainEntityOfPage" typeof="WebPage"><h1 style="display:none";>https://blog.mejakita.com/web/article/nameArticle</h1></div>
+                        </div>
+                    </div>
+                </div>
+                <!--End of Popular Article-->
+
+                <div class="card-box latest">
+                    <div class="all-box">
+                        <div class="title-desc">
+                            <p>SHARE THIS ARTICLE</p>
+                            <div class="title-desc2"></div>
+                        </div>
+                        <hr class="title-desc3">
+
+                        <div class="share-box">
+                            <a href="#">
+                                <div class="share-icon">
+                                    <i class="fab fa-facebook-square"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="share-box">
+                            <a href="#">
+                                <div class="share-icon">
+                                    <i class="fab fa-twitter"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="share-box">
+                            <a href="#">
+                                <div class="share-icon">
+                                    <i class="fab fa-pinterest"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="share-box">
+                            <a href="#">
+                                <div class="share-icon">
+                                    <i class="fab fa-google-plus-g"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="share-box">
+                            <a href="#">
+                                <div class="share-icon">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="share-box">
+                            <a href="#">
+                                <div onclick="copy('Share This Link')" class="share-icon">
+                                    <i class="fas fa-link"></i>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div style="clear: both"></div>
+                </div>
+            </div>
+            <div style="clear: both"></div>
+            <!--End of Widget-->
+        </div>
+        <!--End of Article-->
+
+        <!--Footer-->
+        <div class="box-footer">
+            <div class="big-footer">
+                <div class="recom-title-footer">
+                    <div class="title-dec-footer">
+                        <p>CATEGORY</p>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recom-title-footer">
+                    <div class="title-dec-footer">
+                        <p>CATEGORY</p>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="recom-title-footer">
+                    <div class="title-dec-footer">
+                        <p>CATEGORY</p>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                    <div class="card-box-footer">
+                        <div>
+                            <div class="list_img">
+                                <img src="img/images.png">
+                            </div>
+                        </div>
+                        <div class="list-body">
+                            <div class="list-info-footer">3 Nutrisi Penting yang Dibutuhkan Oleh  Pelari</div>
+                            <div class="list-date-footer"><i class="far fa-clock"></i> 01 January 2019</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer">
+                <div class="sub-footer">
+                    <img src="img/meja kita.png">
+                    <h4>Copyright@2019</h4>
+                    <div class="box-social">
+                        <div class="social-media facebook">
+                            <a href=""><i class="fab fa-facebook" style="color: #fff"></i></a>
+                        </div>
+                        <div class="social-media instagram">
+                            <a href=""><i class="fab fa-instagram" style="color: #fff"></i></a>
+                        </div>
+                        <div class="social-media twitter">
+                            <a href=""><i class="fab fa-twitter" style="color: #fff"></i></a>
+                        </div>
+                        <div class="social-media youtube">
+                            <a href=""><i class="fab fa-youtube" style="color: #fff"></i></a>
+                        </div>
+                        <div style="clear: both"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--End of Footer-->
+
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script defer src="js/jquery.flexslider.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="js/swiper.min.js"></script>
+        <script src="js/jquery.fancybox.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('#dropdown-category').click(function(){
+                    $('.box-reply').toggleClass('active')
+                })
+            })
+        </script>
+        <script>
+            function copy(text){
+                var textarea = document.createElement('textarea');
+                textarea.value = text;
+                document.body.appendChild(textarea);
+                textarea.select();
+                document.execCommand('copy');
+                document.body.removeChild(textarea);
+            }
+        </script>
+        <script>
+            $('[data-fancybox="gallery"]').fancybox({
+                loop: true,
+                buttons: [
+                "zoom", 
+                "share",
+                "slideShow",
+                //"fullScreen",
+                //"download",
+                "thumbs",
+                "close"
+                ],
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.icon').click(function(){
+                    $('.icon').toggleClass('active');
+                })
+            })
+        </script>
+       <script type="text/javascript">
+            var zero = 0;
+            $(document).ready(function () {
+                $(window).on('scroll', function(){
+                    $('.header').toggleClass('hide', $(window).scrollTop()
+                        > zero);
+                    zero = $(window).scrollTop();
+                })
+            })
+        </script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".icon").click(function(){
+                    $("nav").slideToggle(500);
+                    $(".header").toggleClass("active").focus().val("");
+                })
+            })
+        </script>
+        <script>
+            $(document).ready(function(){
+                $(".btn").click(function(){
+                    $(".search-box").toggleClass("active").focus().val("");
+                    $(this).toggleClass("animate");
+                });
+            });
+        </script>
+        <script>
+            var w = Math.max(document.documentElement.clientWidth, window.innerWidth || 0);
+            var h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+            if (w > 1024) {
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 4,
+                    loop: true,
+                    spaceBetween: 20,
+                    centeredSlides: false,
+                    pagination: {
+                    el: '.swiper-pagination',
+                    clickable: false,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            }
+            else if(window.innerHeight > window.innerWidth && w < 768){
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 1,
+                    loop: true,
+                    spaceBetween: 20,
+                    centeredSlides: false,
+                    pagination: {
+                    el: '.swiper-pagination',
+                    clickable: false,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            }
+            else if(w <= 768){
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 2,
+                    loop: true,
+                    spaceBetween: 20,
+                    centeredSlides: false,
+                    pagination: {
+                    el: '.swiper-pagination',
+                    clickable: false,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            }
+            else if(w <= 1024){
+                var swiper = new Swiper('.swiper-container', {
+                    slidesPerView: 3,
+                    loop: true,
+                    spaceBetween: 20,
+                    centeredSlides: false,
+                    pagination: {
+                    el: '.swiper-pagination',
+                    clickable: false,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            }
+        </script>
+        <script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+            
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "flex";
+            }
+            
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                modal.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
